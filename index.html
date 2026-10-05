@@ -4,7 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Restu Hasan Permadi | Business Analysis and Product Strategy</title>
-  <meta name="description" content="Business analyst and product strategist in training. BRDs, PRDs, usability tests and Power BI dashboards.">
+  <meta name="description" content="Portfolio of Restu Hasan Permadi: BRDs, PRDs, a usability test, a Power BI dashboard and a market-entry recommendation.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Restu Hasan Permadi | Business Analysis and Product Strategy">
+  <meta property="og:description" content="BRDs, PRDs, a usability test, a Power BI dashboard and a market-entry recommendation from the Dibimbing BA and Product Strategy bootcamp.">
+  <!-- After you deploy, add this line with your real address so LinkedIn shows a preview picture:
+  <meta property="og:image" content="https://YOUR-SITE.vercel.app/img/restu.jpg"> -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,46 +17,36 @@
 <header class="site">
   <nav class="wrap" aria-label="Sections">
     <a class="name" href="#top">Restu Hasan Permadi</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#others">Others</a>
-    <a href="#contact">Contact</a>
+    <a href="#work">Work</a>
+    <a href="#experience">Experience</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact" id="navContact" hidden>Contact</a>
   </nav>
 </header>
 
 <main id="top">
 
-  <section class="hero wrap">
-    <h1>Restu Hasan Permadi</h1>
-    <p class="lead">Business analyst and product strategist in training. I write BRDs and PRDs, test ideas with users and analyse data in Power BI.</p>
-    <a class="btn" href="cv.pdf">Download CV</a>
-    <a class="link" href="#projects">See projects</a>
-  </section>
-
-  <section class="gray" id="about">
+  <section class="intro">
     <div class="wrap">
-      <h2>About</h2>
-      <div class="narrow">
-        <p>I study Arabic Literature at Universitas Gadjah Mada and trained in computer and network engineering at vocational school before that. I am now moving into business analysis and product work.</p>
-        <p>In the Dibimbing Business Analyst and Product Strategy bootcamp I took one case from strategy to research, requirements, an experiment and a PRD. I also built a sales dashboard in Power BI and wrote a market-entry recommendation with the numbers behind it.</p>
+      <figure class="photo">
+        <img src="img/restu.jpg" width="720" height="900" alt="Portrait of Restu Hasan Permadi">
+      </figure>
+      <div>
+        <h1>Hi, I'm Restu.</h1>
+        <p class="lead">I'm training to be a business analyst and product strategist. I study Arabic Literature at Universitas Gadjah Mada and I'm moving into business analysis and product work.</p>
+        <p>Most of what's here comes from the Dibimbing Business Analyst and Product Strategy bootcamp: a BRD and FSD, an experiment plan and a PRD from a usability test, a Power BI dashboard, a market-entry recommendation and a project cost review. I'm open to remote and project-based work.</p>
+        <div class="links" id="heroLinks"></div>
+        <p class="print-only note" id="printContact"></p>
       </div>
-      <dl class="facts">
-        <dt>Studying</dt><dd>Arabic Literature (S1), Universitas Gadjah Mada</dd>
-        <dt>Training</dt><dd>Business Analyst and Product Strategy Bootcamp, Dibimbing, Batch 20</dd>
-        <dt>Before that</dt><dd>Computer and Network Engineering (SMK)</dd>
-        <dt>Languages</dt><dd>Indonesian, Arabic, English (C1 Advanced, EF SET)</dd>
-        <dt>Tools</dt><dd>Power BI (DAX, Power Query), Excel, SQL basics, Python (pandas), Figma and FigJam, draw.io, Lovable</dd>
-        <dt>Looking for</dt><dd>Junior business analyst or product roles, remote or project-based</dd>
-      </dl>
     </div>
   </section>
 
-  <section class="dark" id="projects">
-    <div class="wrap">
-      <h2>Projects</h2>
-      <p class="mut c narrow no-print">Five pieces of bootcamp work. Each page says what data is real and what comes from the case. Drag the cards or use the buttons.</p>
+  <section id="work">
+    <div class="wrap sec-head">
+      <h2>Work</h2>
+      <p>Five pieces from the bootcamp. Drag the cards or use the buttons, then open the case study.</p>
     </div>
+
     <div class="cf" id="cf" role="group" aria-roledescription="carousel" aria-label="Projects">
       <div class="cf-stage" id="cfStage"></div>
       <div class="cf-cap" id="cfCap" aria-live="polite"></div>
@@ -61,49 +56,59 @@
       </div>
     </div>
     <noscript>
-      <div class="wrap c">
-        <p><a href="shopee-live.html">Shopee Live: Auto-Apply Voucher</a></p>
-        <p><a href="aromabrew.html">AromaBrew in Yogyakarta</a></p>
-        <p><a href="amazon-dashboard.html">Amazon sales dashboard</a></p>
-        <p><a href="tokopedia-loyalty.html">Tokopedia Loyalty Reward</a></p>
-        <p><a href="leadership-bootcamp.html">Leadership bootcamp schedule and cost</a></p>
+      <div class="more">
+        <ul class="list">
+          <li><strong><a href="shopee-live.html">Shopee Live: Auto-Apply Voucher</a></strong></li>
+          <li><strong><a href="aromabrew.html">AromaBrew in Yogyakarta</a></strong></li>
+          <li><strong><a href="amazon-dashboard.html">Amazon sales dashboard</a></strong></li>
+          <li><strong><a href="tokopedia-loyalty.html">Tokopedia Loyalty Reward</a></strong></li>
+          <li><strong><a href="leadership-bootcamp.html">Leadership bootcamp: schedule and cost</a></strong></li>
+        </ul>
       </div>
     </noscript>
-    <div class="print-only wrap"><div class="pl" id="printList"></div></div>
-  </section>
+    <div class="print-only"><div class="pl" id="printList"></div></div>
 
-  <section id="testimonials">
-    <div class="wrap">
-      <h2>Testimonials</h2>
-      <p class="quote">[Quote from a mentor or teammate. Ask for a LinkedIn recommendation and quote it here.]</p>
-      <p class="c mut">[Name, role]</p>
-      <p class="c"><a href="[linkedin-recommendations-url]">More on LinkedIn</a></p>
-    </div>
-  </section>
-
-  <section class="gray" id="others">
-    <div class="wrap">
-      <h2>Others</h2>
-      <ul class="plain">
-        <li><strong>Tokopedia Wishlist BRD.</strong> A BRD for a wishlist feature: scope, requirements, constraints and stakeholders. Practice case. <a href="files/tokopedia-wishlist-brd.pdf">PDF</a></li>
-        <li><strong>Technical Problem 2.</strong> Three case simulations on product sense, collaboration and prioritisation. <a href="files/technical-problem-2.pdf">PDF</a></li>
-        <li><strong>Scrum plan for a workplace health app.</strong> Group exercise: a product goal, a 14-item backlog and three two-week sprints of 19, 21 and 21 story points, with a definition of done. <a href="files/scrum-sehatkerja.pdf">PDF</a></li>
-        <li><strong>Request Refund feature.</strong> Group exercise: user flow, information architecture and two wireframes, with a 3-day eligibility rule. <a href="files/refund-flow-wireframe.pdf">PDF</a></li>
-        <li><strong>Payment Link via Midtrans API.</strong> Group assignment (four of us): read the docs, compared integration options, planned sandbox to go-live and tested success and expired payments in the sandbox.</li>
-        <li><strong>Research Staff, LEM FIB.</strong> The student executive body of the Faculty of Cultural Sciences, UGM. Past role.</li>
-        <li><strong>Rajul Gharib.</strong> Arabic to Indonesian translation of a novel for a university course, applying Nida and Newmark.</li>
-        <li><strong>English C1 Advanced.</strong> EF SET certificate. <a href="[certificate-link]">Certificate</a></li>
+    <div class="more">
+      <h3>More work</h3>
+      <p class="note">Smaller exercises from the bootcamp.</p>
+      <ul class="list">
+        <li><strong>Tokopedia Wishlist BRD</strong><span class="l"><a href="files/tokopedia-wishlist-brd.pdf">PDF</a></span><span class="d">A BRD for a wishlist feature: scope, requirements, constraints and stakeholders.</span></li>
+        <li><strong>Technical Problem 2</strong><span class="l"><a href="files/technical-problem-2.pdf">PDF</a></span><span class="d">Three case simulations on product sense, collaboration and prioritisation.</span></li>
+        <li><strong>Scrum plan for a workplace health app</strong><span class="l"><a href="files/scrum-sehatkerja.pdf">PDF</a></span><span class="d">Group exercise: a product goal, a 14-item backlog and three sprints of 19, 21 and 21 story points.</span></li>
+        <li><strong>Request Refund feature</strong><span class="l"><a href="files/refund-flow-wireframe.pdf">PDF</a></span><span class="d">Group exercise: user flow, information architecture and two wireframes, with a 3-day eligibility rule.</span></li>
+        <li><strong>Payment Link via Midtrans API</strong><span class="d">Group assignment: compared integration options, planned sandbox to go-live and tested success and expired payments.</span></li>
       </ul>
     </div>
   </section>
 
-  <section id="contact">
-    <div class="wrap c">
-      <h2>Contact</h2>
-      <p class="mut">Open to junior business analyst and product roles, and to project work.</p>
-      <a class="btn" href="mailto:[your-email]">[your-email]</a>
-      <a class="link" href="[linkedin-url]">LinkedIn</a>
-      <p class="print-only note">[your-email] / [linkedin-url]</p>
+  <section id="experience">
+    <div class="wrap">
+      <h2>Experience and education</h2>
+      <ul class="tl">
+        <li><span class="when">Jun 2026 – now</span><div><strong>Business Analyst and Product Strategy Bootcamp, Dibimbing (Batch 20)</strong><p>Case work from strategy and research to requirements, experiments, dashboards and project cost.</p></div></li>
+        <li><span class="when">Aug 2024 – now</span><div><strong>Arabic Literature (S1), Universitas Gadjah Mada</strong><p>Faculty of Cultural Sciences.</p></div></li>
+        <li><span class="when">Jan 2025 – Jan 2026</span><div><strong>Strategic Research Staff, LEM FIB UGM</strong><p>Researched 5+ strategic issues and wrote 5+ research reports used in internal discussions.</p></div></li>
+        <li><span class="when">Dec 2023 – Dec 2024</span><div><strong>Documentation and Publication Division Coordinator, Forum Anak Kudus</strong><p>Coordinated a team of 5 and documented activities for reporting to 5 stakeholders.</p></div></li>
+        <li><span class="when">2021 – 2024</span><div><strong>Computer and Network Engineering, SMK Negeri 2 Kudus</strong></div></li>
+      </ul>
+      <p class="tools"><span class="mut">Tools:</span> Power BI (DAX, Power Query), Excel, SQL basics, Python (pandas), Figma and FigJam, draw.io, Lovable.</p>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <div class="wrap">
+      <h2>Certificates</h2>
+      <ul class="tl">
+        <li><span class="when">English</span><div><strong>EF SET English Certificate, C1 Advanced</strong><p id="certLink"></p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" hidden>
+    <div class="wrap">
+      <h2>Get in touch</h2>
+      <p class="mut">Open to remote and project-based work in business analysis and product.</p>
+      <div class="links" id="contactLinks"></div>
     </div>
   </section>
 
@@ -112,26 +117,76 @@
 <footer class="foot"><div class="wrap">Restu Hasan Permadi</div></footer>
 
 <script>
-/* Edit the projects here.
-   cover: image path, or '' for a colour block. */
+/* ---------- 1. Your links. Fill these in; anything left empty is simply not shown. ---------- */
+const profile = {
+  email: 'restuhasanpermadi@gmail.com',        // for example 'name@gmail.com'
+  linkedin: 'https://www.linkedin.com/in/restuhasanpermadi',     // full address, for example 'https://www.linkedin.com/in/your-name'
+  github: '',       // optional
+  cv: 'cv.pdf',     // put your CV in the same folder with this name; the button appears once the file is online
+  certificate: 'https://cert.efset.org/en/BFrdAb'   // optional link to your EF SET certificate
+};
+
+/* ---------- 2. Your projects. Cover images live in the img folder. ---------- */
 const slides = [
-  { title:'Shopee Live: Auto-Apply Voucher', href:'shopee-live.html', cover:'img/shopee.jpg', color:'#c8442f',
+  { title:'Shopee Live: Auto-Apply Voucher', href:'shopee-live.html', cover:'img/shopee.jpg',
     line:'Auto-applying the host’s voucher took 42 seconds against 1 minute 6 seconds by hand, in a two-person usability test.',
     meta:[['Domain','E-commerce, live commerce'],['Skills','Research, experiment design, requirements'],['Method','Usability test, RICE'],['Artifact','BRD and FSD, experiment plan, PRD, prototype']] },
-  { title:'AromaBrew in Yogyakarta', href:'aromabrew.html', cover:'img/aromabrew.jpg', color:'#2d4a63',
+  { title:'AromaBrew in Yogyakarta', href:'aromabrew.html', cover:'img/aromabrew.jpg',
     line:'A grab-and-go kiosk pays back in about 2.9 months. The café format takes 10.',
     meta:[['Domain','Food and beverage'],['Skills','Financial comparison, risk analysis'],['Method','Payback analysis'],['Artifact','Recommendation deck']] },
-  { title:'Amazon Sales Dashboard', href:'amazon-dashboard.html', cover:'img/amazon.jpg', color:'#1c2a3a',
+  { title:'Amazon Sales Dashboard', href:'amazon-dashboard.html', cover:'img/amazon.jpg',
     line:'A 14.28% cancel rate, a sales spike of 6 to 7 times in April to June, and one category earning nearly twice the sales value of its twin.',
     meta:[['Domain','Retail sales analytics'],['Skills','Data cleaning, DAX, insight writing'],['Method','Power BI dashboard'],['Artifact','Dashboard and insight deck']] },
-  { title:'Tokopedia Loyalty Reward', href:'tokopedia-loyalty.html', cover:'', color:'linear-gradient(145deg,#2f9e6b,#0d5a3a)',
+  { title:'Tokopedia Loyalty Reward', href:'tokopedia-loyalty.html', cover:'img/tokopedia.jpg',
     line:'A PRD for a reward that unlocks after a user’s third purchase, aimed at lifting third-to-fourth purchase retention from 12% to 20%.',
     meta:[['Domain','E-commerce, retention'],['Skills','Problem framing, prioritisation'],['Method','PRD with success metrics'],['Artifact','Prototype-ready PRD']] },
-  { title:'Leadership Bootcamp: Schedule and Cost', href:'leadership-bootcamp.html', cover:'img/bootcamp.jpg', color:'#3a3ab8',
+  { title:'Leadership Bootcamp: Schedule and Cost', href:'leadership-bootcamp.html', cover:'img/bootcamp.jpg',
     line:'At week 4 the project was on track to overrun its budget by about 48%. The plan was to audit the spend first.',
     meta:[['Domain','Corporate training, project management'],['Skills','WBS, critical path, earned value'],['Method','EVM, cost classification'],['Artifact','Group deck']] }
 ];
 
+/* ---------- Links ---------- */
+(function(){
+  const heroEl = document.getElementById('heroLinks'), contactEl = document.getElementById('contactLinks'),
+        contactSec = document.getElementById('contact'), navContact = document.getElementById('navContact'),
+        certEl = document.getElementById('certLink');
+  let cvOnline = false;
+
+  function add(el, label, href, primary){
+    const a = document.createElement('a');
+    a.href = href; a.textContent = label;
+    if (primary) a.className = 'btn';
+    if (/^https?:/.test(href)) { a.target = '_blank'; a.rel = 'noopener'; }
+    el.appendChild(a);
+  }
+  function build(el){
+    el.innerHTML = '';
+    let first = true;
+    const items = [];
+    if (profile.email)    items.push(['Email me', 'mailto:' + profile.email]);
+    if (profile.linkedin) items.push(['LinkedIn', profile.linkedin]);
+    if (profile.github)   items.push(['GitHub', profile.github]);
+    if (cvOnline)         items.push(['Download CV', profile.cv]);
+    items.forEach(it => { add(el, it[0], it[1], first); first = false; });
+    return items.length;
+  }
+  function render(){
+    build(heroEl);
+    const n = build(contactEl);
+    contactSec.hidden = !n; navContact.hidden = !n;
+    if (profile.certificate) { certEl.innerHTML = ''; add(certEl, 'View certificate', profile.certificate, false); }
+    const pr = document.getElementById('printContact');
+    if (pr) pr.textContent = [profile.email, profile.linkedin, profile.github].filter(Boolean).join('  /  ');
+  }
+  render();
+  if (profile.cv && /^https?:|^[\w\-./]+$/.test(profile.cv) && location.protocol.startsWith('http')) {
+    fetch(profile.cv, { method:'HEAD' }).then(r => {
+      if (r.ok && /pdf/i.test(r.headers.get('content-type') || '')) { cvOnline = true; render(); }
+    }).catch(()=>{});
+  }
+})();
+
+/* ---------- Carousel: the centre card faces you, neighbours swing their outer edges forward ---------- */
 (function(){
   const stage = document.getElementById('cfStage'), cap = document.getElementById('cfCap'),
         prev = document.getElementById('cfPrev'), next = document.getElementById('cfNext'),
@@ -141,8 +196,8 @@ const slides = [
   const cards = slides.map((s, i) => {
     const b = document.createElement('button');
     b.type = 'button';
-    b.className = 'cf-card' + (s.cover ? ' img' : '');
-    b.style.setProperty('--c', s.cover ? 'url("' + s.cover + '") center/cover, ' + s.color : s.color);
+    b.className = 'cf-card';
+    b.style.backgroundImage = 'url("' + s.cover + '")';
     b.innerHTML = '<span></span>';
     b.firstChild.textContent = s.title;
     b.setAttribute('aria-label', s.title);
@@ -151,13 +206,15 @@ const slides = [
     return b;
   });
 
+  const step = () => cards[0].offsetWidth * 0.66;
+
   function layout(){
-    const step = cards[0].offsetWidth * 0.66;
+    const st = step();
     cards.forEach((c, i) => {
       const d = i - pos, a = Math.abs(d), sgn = Math.sign(d);
-      const rot = -sgn * Math.min(a, 1) * 50;       // outer edge swings toward the viewer
+      const rot = -sgn * Math.min(a, 1) * 50;
       const sc = 1 - Math.min(a, 2) * 0.08;
-      c.style.transform = 'translateX(' + (d * step) + 'px) rotateY(' + rot + 'deg) scale(' + sc + ')';
+      c.style.transform = 'translateX(' + (d * st) + 'px) rotateY(' + rot + 'deg) scale(' + sc + ')';
       c.style.zIndex = 100 - Math.round(a * 10);
       c.style.opacity = a > 3 ? 0 : 1;
       c.style.pointerEvents = a > 3 ? 'none' : 'auto';
@@ -165,22 +222,18 @@ const slides = [
     });
   }
 
-  function facts(meta){
-    const dl = document.createElement('dl'); dl.className = 'facts';
-    meta.forEach(m => {
-      const dt = document.createElement('dt'), dd = document.createElement('dd');
-      dt.textContent = m[0]; dd.textContent = m[1]; dl.append(dt, dd);
-    });
-    return dl;
-  }
-
   function caption(){
     const s = slides[active];
     cap.innerHTML = '';
     const h = document.createElement('h3'); h.textContent = s.title;
-    const l = document.createElement('p'); l.className = 'narrow'; l.textContent = s.line;
+    const p = document.createElement('p'); p.textContent = s.line;
+    const dl = document.createElement('dl'); dl.className = 'facts';
+    s.meta.forEach(m => {
+      const dt = document.createElement('dt'), dd = document.createElement('dd');
+      dt.textContent = m[0]; dd.textContent = m[1]; dl.append(dt, dd);
+    });
     const a = document.createElement('a'); a.href = s.href; a.textContent = 'Read the case study';
-    cap.append(h, l, facts(s.meta), a);
+    cap.append(h, p, dl, a);
     prev.disabled = active === 0;
     next.disabled = active === slides.length - 1;
   }
@@ -197,8 +250,7 @@ const slides = [
     const dx = e.clientX - startX;
     if (Math.abs(dx) > 5) { moved = true; stage.classList.add('drag'); }
     if (!moved) return;
-    const step = cards[0].offsetWidth * 0.66;
-    pos = Math.max(0, Math.min(slides.length - 1, startPos - dx / step));
+    pos = Math.max(0, Math.min(slides.length - 1, startPos - dx / step()));
     layout();
   });
   window.addEventListener('pointerup', () => {
@@ -215,11 +267,11 @@ const slides = [
   });
   window.addEventListener('resize', layout);
 
-  // Print version: every project as plain text
+  // Print version: every project as plain text with its cover
   const pl = document.getElementById('printList');
   slides.forEach(s => {
     const art = document.createElement('article');
-    if (s.cover) { const im = document.createElement('img'); im.src = s.cover; im.alt = ''; art.appendChild(im); }
+    const im = document.createElement('img'); im.src = s.cover; im.alt = ''; art.appendChild(im);
     const h = document.createElement('h3'); h.textContent = s.title;
     const p = document.createElement('p'); p.textContent = s.line;
     const f = document.createElement('p'); f.className = 'note';
