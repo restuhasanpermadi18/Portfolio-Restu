@@ -10,6 +10,8 @@
   <meta property="og:description" content="BRDs, PRDs, a usability test, a Power BI dashboard and a market-entry recommendation from the Dibimbing BA and Product Strategy bootcamp.">
   <!-- After you deploy, add this line with your real address so LinkedIn shows a preview picture:
   <meta property="og:image" content="https://YOUR-SITE.vercel.app/img/restu.jpg"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,52 +30,53 @@
 
   <section class="intro">
     <div class="hero-bg" aria-hidden="true">
-      <i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i>
-      <svg class="doodle" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path class="draw d1" pathLength="1" d="M-20 560 C 180 470, 260 640, 460 560 S 760 430, 980 520 S 1180 600, 1240 540"/>
-        <path class="draw d2" pathLength="1" d="M-20 120 C 140 60, 260 190, 420 120 S 700 40, 860 100"/>
-        <g class="spark s1"><path d="M0 -26 V26 M-26 0 H26 M-18 -18 L18 18 M18 -18 L-18 18"/></g>
-        <g class="spark s2"><path d="M0 -16 V16 M-16 0 H16 M-11 -11 L11 11 M11 -11 L-11 11"/></g>
-        <circle class="dot" cx="1090" cy="120" r="7"/><circle class="dot dd" cx="90" cy="400" r="5"/>
+      <i class="blob b1"></i><i class="blob b2"></i>
+      <svg class="doodle" viewBox="0 0 1200 760" preserveAspectRatio="xMidYMid slice" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path class="draw d1" pathLength="1" d="M-20 735 C 220 690, 340 760, 560 720 S 860 670, 1020 715 S 1180 750, 1240 710"/>
+        <path class="draw d2" pathLength="1" d="M-20 46 C 150 12, 280 70, 440 40 S 680 10, 820 36"/>
+        <g class="spark s1"><path d="M0 -24 V24 M-24 0 H24 M-17 -17 L17 17 M17 -17 L-17 17"/></g>
+        <circle class="dot" cx="1110" cy="640" r="6"/>
       </svg>
     </div>
-    <div class="wrap bento">
-      <article class="tile me">
-        <span class="tag">About me</span>
-        <div class="portrait">
-          <span class="ring"></span><span class="disc"></span>
-          <img src="img/restu-cutout.png" width="620" height="830" alt="Portrait of Restu Hasan Permadi">
-        </div>
-        <p class="im">I'm,</p>
-        <p class="nm">Restu<br>Hasan<br>Permadi</p>
-        <a class="mail" id="cardMail" hidden></a>
-      </article>
-
-      <div class="title">
-        <h1>Portfolio</h1>
-        <p class="sub">Business analysis and product strategy</p>
-      </div>
-
-      <article class="tile bio">
+    <div class="wrap hero">
+      <div class="hero-text">
+        <h1>Restu Hasan<br>Permadi</h1>
         <p class="lead">I'm training to be a business analyst and product strategist. I study Arabic Literature at Universitas Gadjah Mada and I'm moving into business analysis and product work.</p>
-        <p>Most of what's here comes from the Dibimbing Business Analyst and Product Strategy bootcamp: a BRD and FSD, an experiment plan and a PRD from a usability test, a Power BI dashboard, a market-entry recommendation and a project cost review.</p>
-      </article>
-      <article class="tile stat teal"><b data-to="5">5</b><span>Case studies</span></article>
-
-      <article class="tile open">
-        <p>Open to remote and project-based work.</p>
+        <p class="more-bio">Most of what's here comes from the Dibimbing Business Analyst and Product Strategy bootcamp: a BRD and FSD, an experiment plan and a PRD from a usability test, a Power BI dashboard, a market-entry recommendation and a project cost review. I'm open to remote and project-based work.</p>
         <div class="links" id="heroLinks"></div>
         <p class="print-only note" id="printContact"></p>
-      </article>
-      <article class="tile stat violet"><b data-to="12">12</b><span>Documents to read</span></article>
-      <article class="tile stat sun"><b>C1</b><span>English, EF SET</span></article>
+        <dl class="stats">
+          <div><dt>Case studies</dt><dd data-to="5">5</dd></div>
+          <div><dt>Documents to read</dt><dd data-to="12">12</dd></div>
+          <div><dt>English, EF SET</dt><dd>C1</dd></div>
+        </dl>
+      </div>
+      <figure class="hero-photo">
+        <div class="panel">
+          <span class="pill p1">Business analysis</span>
+          <span class="pill p2">Product strategy</span>
+          <img src="img/restu-cutout.png" width="620" height="830" alt="Portrait of Restu Hasan Permadi">
+        </div>
+      </figure>
     </div>
   </section>
 
   <section id="work">
-    <div class="wrap sec-head">
-      <h2>Work</h2>
-      <p>Five pieces from the bootcamp. Drag the cards or use the buttons, then open the case study.</p>
+    <div class="wrap constellation">
+      <svg class="lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <line x1="14" y1="16" x2="39" y2="34"/><line x1="46" y1="8" x2="48" y2="33"/><line x1="82" y1="20" x2="61" y2="34"/>
+        <line x1="20" y1="84" x2="40" y2="71"/><line x1="76" y1="82" x2="60" y2="71"/>
+      </svg>
+      <img class="ct c1" src="img/shopee.jpg" alt="" aria-hidden="true">
+      <img class="ct c2" src="img/aromabrew.jpg" alt="" aria-hidden="true">
+      <img class="ct c3" src="img/amazon.jpg" alt="" aria-hidden="true">
+      <img class="ct c4" src="img/tokopedia.jpg" alt="" aria-hidden="true">
+      <img class="ct c5" src="img/bootcamp.jpg" alt="" aria-hidden="true">
+      <div class="con-text">
+        <p class="eyebrow">Selected work</p>
+        <h2>Five pieces from the bootcamp</h2>
+        <p>Drag the cards or use the buttons, then open the case study.</p>
+      </div>
     </div>
 
     <div class="cf" id="cf" role="group" aria-roledescription="carousel" aria-label="Projects">
@@ -200,8 +203,6 @@ const slides = [
     return items.length;
   }
   function render(){
-    const cm = document.getElementById('cardMail');
-    if (profile.email) { cm.textContent = profile.email; cm.href = 'mailto:' + profile.email; cm.hidden = false; }
     build(heroEl);
     const n = build(contactEl);
     contactSec.hidden = !n; navContact.hidden = !n;
