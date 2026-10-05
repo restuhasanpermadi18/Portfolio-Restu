@@ -147,6 +147,23 @@ td.n,th.n{text-align:right;padding-right:0;white-space:nowrap}
 ol,ul{padding-left:1.2rem}
 li{margin-bottom:.4rem}
 
+/* Travelling objects: a butterfly, a paper plane, a mini Gantt bar and a checklist cross each section */
+.fx{position:relative;overflow:hidden;isolation:isolate}
+.fly{position:absolute;left:0;top:var(--y,10%);width:var(--s,4rem);z-index:-1;pointer-events:none;opacity:.95;animation:ltr var(--t,36s) linear var(--d,0s) infinite;will-change:transform}
+.fly.rtl{animation-name:rtl}
+.fly svg{display:block;width:100%;height:auto;animation:bob 6s ease-in-out infinite}
+.fly.bf svg{animation:flutter 3.6s ease-in-out infinite}
+.wings{transform-box:fill-box;transform-origin:center;animation:flap .45s ease-in-out infinite alternate}
+@keyframes flap{to{transform:scaleX(.4)}}
+@keyframes flutter{0%,100%{transform:translateY(0) rotate(-4deg)}25%{transform:translateY(-16px) rotate(5deg)}50%{transform:translateY(4px) rotate(-2deg)}75%{transform:translateY(-12px) rotate(4deg)}}
+@keyframes ltr{0%{transform:translateX(-14vw) scaleX(1)}49.9%{transform:translateX(112vw) scaleX(1)}50%{transform:translateX(112vw) scaleX(-1)}100%{transform:translateX(-14vw) scaleX(-1)}}
+@keyframes rtl{0%{transform:translateX(112vw) scaleX(-1)}49.9%{transform:translateX(-14vw) scaleX(-1)}50%{transform:translateX(-14vw) scaleX(1)}100%{transform:translateX(112vw) scaleX(1)}}
+/* the card in front is a link */
+.cf-card.is-active{cursor:pointer}
+.cf-card.is-active::after{content:"Open case study \2192";position:absolute;left:50%;bottom:.75rem;transform:translateX(-50%);font:500 .8125rem var(--sans);background:#fff;color:var(--ink);padding:.35rem .9rem;border-radius:999px;box-shadow:0 6px 16px -8px rgba(0,0,0,.35);opacity:0;transition:opacity .2s;white-space:nowrap}
+.cf-card.is-active:hover::after,.cf-card.is-active:focus-visible::after{opacity:1}
+@media (hover:none){.cf-card.is-active::after{opacity:1}}
+
 @media (max-width:56rem){
   .hero{grid-template-columns:1fr;gap:2.5rem}
   .hero-photo{order:-1}
@@ -166,18 +183,19 @@ li{margin-bottom:.4rem}
   .list li{grid-template-columns:1fr}.list .l{grid-row:auto;grid-column:1}
   .constellation{height:30rem}
   .ct{width:5.75rem;height:4.25rem}
+  .fly{width:calc(var(--s) * .75)}
   .c2{left:34%}.c3{right:3%}.c4{left:4%}.c5{right:4%}
   .con-text{width:92%}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}.cf-card{transition:none}
-  .blob,.draw,.spark,.dot,.pill,.ct,.hero-text,.hero-photo{animation:none!important}.draw{stroke-dashoffset:0}
+  .fly{display:none}.blob,.draw,.spark,.dot,.pill,.ct,.hero-text,.hero-photo{animation:none!important}.draw{stroke-dashoffset:0}
 }
 
 @media print{
   @page{size:A4;margin:14mm}
   body{font-size:10.5pt;line-height:1.45;background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  .site,.cf,.btn,noscript,.no-print,.cf-ctl,.foot,.hero-bg,.lines,.ct,.pill{display:none!important}
+  .site,.cf,.btn,noscript,.no-print,.cf-ctl,.foot,.hero-bg,.lines,.ct,.pill,.fly{display:none!important}
   .print-only{display:block}
   section{padding:1rem 0;border-top:1px solid var(--rule)}
   .intro{padding-top:0;overflow:visible}
