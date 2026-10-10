@@ -5,333 +5,395 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Restu Hasan Permadi | Business Analysis and Product Strategy</title>
   <meta name="description" content="Portfolio of Restu Hasan Permadi: BRDs, PRDs, a usability test, a Power BI dashboard and a market-entry recommendation.">
+  <meta name="theme-color" content="#e5eae6">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Restu Hasan Permadi | Business Analysis and Product Strategy">
   <meta property="og:description" content="BRDs, PRDs, a usability test, a Power BI dashboard and a market-entry recommendation from the Dibimbing BA and Product Strategy bootcamp.">
   <!-- After you deploy, add this line with your real address so LinkedIn shows a preview picture:
-  <meta property="og:image" content="https://YOUR-SITE.vercel.app/img/restu.jpg"> -->
+  <meta property="og:image" content="https://YOUR-SITE.vercel.app/img/restu-color.png"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
+  <script>document.documentElement.classList.add('js')</script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site">
+<header class="site" id="siteBar">
   <nav class="wrap" aria-label="Sections">
-    <a class="name" href="#top">Restu Hasan Permadi</a>
-    <a href="#work">Work</a>
-    <a href="#experience">Experience</a>
-    <a href="#certificates">Certificates</a>
-    <a href="#contact" id="navContact" hidden>Contact</a>
+    <a class="logo" href="#top" aria-label="Restu Hasan Permadi, home">Restu<br>Permadi.</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#works">My Works</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#others">Others</a>
+      <a class="btn" id="navMail" href="#contact" hidden>Email me</a>
+    </div>
   </nav>
 </header>
 
-<main id="top">
+<main>
 
-  <section class="intro">
-    <div class="hero-bg" aria-hidden="true">
-      <i class="blob b1"></i><i class="blob b2"></i>
-      <svg class="doodle" viewBox="0 0 1200 760" preserveAspectRatio="xMidYMid slice" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path class="draw d1" pathLength="1" d="M-20 735 C 220 690, 340 760, 560 720 S 860 670, 1020 715 S 1180 750, 1240 710"/>
-        <path class="draw d2" pathLength="1" d="M-20 46 C 150 12, 280 70, 440 40 S 680 10, 820 36"/>
-        
-        <circle class="dot" cx="1110" cy="640" r="6"/>
-      </svg>
-    </div>
-    <div class="fly bf" style="--y:14%;--s:4.25rem;--t:34s;--d:-6s" aria-hidden="true"><svg viewBox="0 0 64 48" aria-hidden="true"><g class="wings"><g fill="#eba24b" stroke="#1d1c1a" stroke-width="1.6" stroke-linejoin="round"><path d="M32 22C22 4 6 5 4 16c-1 8 12 12 28 10z"/><path d="M32 26C20 28 9 34 14 42c4 6 14-2 18-12z"/><g transform="translate(64 0) scale(-1 1)"><path d="M32 22C22 4 6 5 4 16c-1 8 12 12 28 10z"/><path d="M32 26C20 28 9 34 14 42c4 6 14-2 18-12z"/></g></g></g><path d="M32 16v24" stroke="#1d1c1a" stroke-width="3.2" stroke-linecap="round"/><path d="M32 16c-2-5-5-7-8-8M32 16c2-5 5-7 8-8" fill="none" stroke="#1d1c1a" stroke-width="1.4" stroke-linecap="round"/></svg></div>
-    <div class="wrap hero">
-      <div class="hero-text">
-        <h1>Restu Hasan<br>Permadi</h1>
-        <p class="lead">I'm training to be a business analyst and product strategist. I study Arabic Literature at Universitas Gadjah Mada and I'm moving into business analysis and product work.</p>
-        <p class="more-bio">Most of what's here comes from the Dibimbing Business Analyst and Product Strategy bootcamp: a BRD and FSD, an experiment plan and a PRD from a usability test, a Power BI dashboard, a market-entry recommendation and a project cost review. I'm open to remote and project-based work.</p>
-        <div class="links" id="heroLinks"></div>
-        <p class="print-only note" id="printContact"></p>
-        <dl class="stats">
-          <div><dt>Case studies</dt><dd data-to="5">5</dd></div>
-          <div><dt>Documents to read</dt><dd data-to="12">12</dd></div>
-          <div><dt>English, EF SET</dt><dd>C1</dd></div>
-        </dl>
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="wrap hero-top">
+      <div class="hello">
+        <p class="hey">Hey there,</p>
+        <h1><span>I’m Restu</span><span>Hasan</span><span>Permadi</span></h1>
       </div>
-      <figure class="hero-photo">
-        <div class="panel">
-          <span class="pill p1">Business analysis</span>
-          <span class="pill p2">Product strategy</span>
-          <img src="img/restu-cutout.png" width="620" height="830" alt="Portrait of Restu Hasan Permadi">
-        </div>
-      </figure>
+      <div class="intro">
+        <p class="sub">I’m training to be a business analyst and product strategist. I study Arabic Literature at Universitas Gadjah Mada and I’m moving into business analysis and product work.</p>
+        <a class="cta-link" id="heroMail" href="#contact">Let’s collaborate <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <div class="wrap stage">
+      <i class="pill pa" aria-hidden="true"></i><i class="pill pb" aria-hidden="true"></i>
+      <img class="photo" src="img/restu-color.png" width="650" height="790" alt="Portrait of Restu Hasan Permadi">
+      <div class="stat s1"><b data-to="5">5</b><span>Case studies</span></div>
+      <div class="stat s2"><b>C1</b><span>English, EF SET</span></div>
+      <svg class="squig q1" viewBox="0 0 120 40" aria-hidden="true"><path pathLength="1" d="M2 30C30 6 80 6 118 34"/></svg>
+      <svg class="squig q2" viewBox="0 0 150 80" aria-hidden="true"><path pathLength="1" d="M146 8C110 24 70 44 38 56 12 66 2 50 18 40c14-9 36 6 22 34"/></svg>
     </div>
   </section>
 
-  <section id="work" class="fx">
-    <div class="fly pl rtl" style="--y:9%;--s:3.75rem;--t:40s;--d:-12s" aria-hidden="true"><svg viewBox="0 0 64 40" aria-hidden="true"><path d="M2 20 62 2 40 38 30 25z" fill="#fff" stroke="#1d1c1a" stroke-width="1.6" stroke-linejoin="round"/><path d="M30 25 62 2M30 25v11l7-9" fill="none" stroke="#d97757" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
-    <div class="fly ga" style="--y:92%;--s:5.5rem;--t:46s;--d:-30s" aria-hidden="true"><svg viewBox="0 0 96 44" aria-hidden="true"><path d="M2 40h92" stroke="#1d1c1a" stroke-opacity=".35" stroke-width="1.2"/><rect x="2" y="4" width="44" height="9" rx="4.5" fill="#d97757"/><rect x="26" y="17" width="48" height="9" rx="4.5" fill="#1d1c1a"/><rect x="52" y="30" width="40" height="9" rx="4.5" fill="#c3d6cb" stroke="#1d1c1a" stroke-width="1"/></svg></div>
-    <div class="wrap constellation">
-      <svg class="lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-        <line x1="14" y1="16" x2="39" y2="34"/><line x1="46" y1="8" x2="48" y2="33"/><line x1="82" y1="20" x2="61" y2="34"/>
-        <line x1="20" y1="84" x2="40" y2="71"/><line x1="76" y1="82" x2="60" y2="71"/>
-      </svg>
-      <img class="ct c1" src="img/shopee.jpg" alt="" aria-hidden="true">
-      <img class="ct c2" src="img/aromabrew.jpg" alt="" aria-hidden="true">
-      <img class="ct c3" src="img/amazon.jpg" alt="" aria-hidden="true">
-      <img class="ct c4" src="img/tokopedia.jpg" alt="" aria-hidden="true">
-      <img class="ct c5" src="img/bootcamp.jpg" alt="" aria-hidden="true">
-      <div class="con-text">
-        <p class="eyebrow">Selected work</p>
-        <h2>Five pieces from the bootcamp</h2>
-        <p>Drag the cards or use the buttons, then open the case study.</p>
+  <!-- About: professional profile -->
+  <section class="sec about" id="about">
+    <div class="wrap two">
+      <div>
+        <p class="eyebrow rv">About</p>
+        <h2 class="rv">What I help with</h2>
       </div>
+      <div class="rv r1">
+        <p class="lead">Most of what's here comes from the Dibimbing Business Analyst and Product Strategy bootcamp: a BRD and FSD, an experiment plan and a PRD from a usability test, a Power BI dashboard, a market-entry recommendation and a project cost review.</p>
+        <p class="mut">Before the bootcamp I did research and documentation work with two organisations. I'm open to remote and project-based work.</p>
+      </div>
+    </div>
+    <div class="wrap facts3">
+      <div class="fact rv"><b data-to="5" data-suffix="+">5+</b><span>Strategic issues researched at LEM FIB UGM</span></div>
+      <div class="fact rv r1"><b data-to="45">45</b><span>Transactions analysed in the Shopee Live checkout study</span></div>
+      <div class="fact rv r2"><b data-to="12">12</b><span>Documents you can open from this site</span></div>
     </div>
 
-    <div class="cf" id="cf" role="group" aria-roledescription="carousel" aria-label="Projects">
-      <div class="cf-stage" id="cfStage"></div>
-      <div class="cf-cap" id="cfCap" aria-live="polite"></div>
-      <div class="cf-ctl">
-        <button type="button" id="cfPrev">Previous</button>
-        <button type="button" id="cfNext">Next</button>
+    <div class="marq rv" aria-label="Tools I use">
+      <div class="marq-track" data-clone>
+        <span>Power BI</span><span>Excel</span><span>Google Sheets</span><span>SQL basics</span><span>Python (pandas)</span><span>Figma</span><span>FigJam</span><span>draw.io</span><span>Lovable</span><span>Google Workspace</span>
       </div>
     </div>
-    <noscript>
-      <div class="more">
+    <div class="marq rev rv" aria-label="Methods I use">
+      <div class="marq-track" data-clone>
+        <span>Root cause analysis</span><span>Requirements gathering</span><span>BRD and FSD</span><span>PRD</span><span>Process mapping</span><span>Stakeholder analysis</span><span>Market sizing</span><span>OKR</span><span>Solution prioritisation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="sec dark" id="skills">
+    <div class="wrap">
+      <p class="eyebrow rv">Skills</p>
+      <h2 class="rv">Methods, analysis and tools</h2>
+      <p class="sub-p rv">Skills as listed on my CV, grouped by what they are used for.</p>
+      <div class="tabs rv" role="tablist" aria-label="Skill groups">
+        <button role="tab" aria-selected="true" data-tab="ba">Business analysis</button>
+        <button role="tab" aria-selected="false" data-tab="ps">Product strategy</button>
+        <button role="tab" aria-selected="false" data-tab="an">Analysis and tools</button>
+      </div>
+      <div class="chips" id="chips"></div>
+    </div>
+  </section>
+
+  <!-- Work experience and background -->
+  <section class="sec" id="experience">
+    <div class="wrap">
+      <p class="eyebrow rv">Background</p>
+      <h2 class="rv">My work experience</h2>
+
+      <div class="acc" id="acc">
+        <article class="acc-item rv">
+          <button class="acc-head" aria-expanded="false">
+            <span class="t"><strong>Strategic Research Staff</strong><em>LEM FIB UGM, Faculty of Cultural Sciences, UGM</em></span>
+            <span class="d">Jan 2025 – Jan 2026</span><span class="m"><span class="o">Read more…</span><span class="c">Hide</span></span>
+          </button>
+          <div class="acc-body"><ul>
+            <li>Researched and analysed 5+ strategic issues to support organisational decision making.</li>
+            <li>Wrote 5+ research reports used as primary references in internal discussions.</li>
+            <li>Summarised and reviewed 2 books for social media content.</li>
+          </ul></div>
+        </article>
+        <article class="acc-item rv">
+          <button class="acc-head" aria-expanded="false">
+            <span class="t"><strong>Documentation and Publication Division Coordinator</strong><em>Forum Anak Kudus, Kudus</em></span>
+            <span class="d">Dec 2023 – Dec 2024</span><span class="m"><span class="o">Read more…</span><span class="c">Hide</span></span>
+          </button>
+          <div class="acc-body"><ul>
+            <li>Coordinated a cross-division team of 5 members to run programmes and align needs across teams.</li>
+            <li>Documented activities in a structured way to support evaluation and reporting to 5 stakeholders.</li>
+            <li>Managed content and communication for internal and external publications across 2 main platforms.</li>
+          </ul></div>
+        </article>
+      </div>
+
+      <h3 class="rv sub-h">Education</h3>
+      <div class="acc">
+        <article class="acc-item rv">
+          <button class="acc-head" aria-expanded="false">
+            <span class="t"><strong>Business Analyst and Product Strategy, Batch 20</strong><em>Dibimbing.id, online</em></span>
+            <span class="d">Jun 2026 – now</span><span class="m"><span class="o">Read more…</span><span class="c">Hide</span></span>
+          </button>
+          <div class="acc-body"><ul>
+            <li>Business analysis fundamentals and the product lifecycle.</li>
+            <li>Product research, process mapping and requirement gathering.</li>
+          </ul></div>
+        </article>
+        <article class="acc-item rv">
+          <button class="acc-head" aria-expanded="false">
+            <span class="t"><strong>Bachelor of Arts in Arabic Literature</strong><em>Universitas Gadjah Mada, Yogyakarta</em></span>
+            <span class="d">Aug 2024 – now</span><span class="m"><span class="o">Read more…</span><span class="c">Hide</span></span>
+          </button>
+          <div class="acc-body"><ul>
+            <li>Relevant coursework: Research Methodology, Translation Studies and Sociolinguistics.</li>
+          </ul></div>
+        </article>
+        <article class="acc-item rv">
+          <button class="acc-head" aria-expanded="false">
+            <span class="t"><strong>Computer and Network Engineering</strong><em>SMK Negeri 2 Kudus</em></span>
+            <span class="d">Jul 2021 – May 2024</span><span class="m"><span class="o">Read more…</span><span class="c">Hide</span></span>
+          </button>
+          <div class="acc-body"><ul>
+            <li>Foundational knowledge in logic and basic programming (HTML and CSS).</li>
+          </ul></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project summaries -->
+  <section class="sec" id="works">
+    <div class="wrap">
+      <p class="eyebrow rv">Projects</p>
+      <h2 class="rv">My Works</h2>
+      <p class="sub-p rv">A selection of bootcamp projects. Each card opens a case study with the work samples.</p>
+
+      <div class="grid">
+        <a class="card rv" href="shopee-live.html">
+          <span class="img"><img src="img/shopee.jpg" alt="" loading="lazy"></span>
+          <span class="body"><h3>Shopee Live: Auto-Apply Voucher</h3><span class="tags"><i>E-commerce</i><i>Usability test</i></span><span class="line">Auto-applying the host’s voucher took 42 seconds against 1 minute 6 seconds by hand.</span><span class="more-l">Read case study <b>→</b></span></span>
+        </a>
+        <a class="card rv r1" href="aromabrew.html">
+          <span class="img"><img src="img/aromabrew.jpg" alt="" loading="lazy"></span>
+          <span class="body"><h3>AromaBrew in Yogyakarta</h3><span class="tags"><i>Food and beverage</i><i>Payback analysis</i></span><span class="line">A grab-and-go kiosk pays back in about 2.9 months. The café format takes 10.</span><span class="more-l">Read case study <b>→</b></span></span>
+        </a>
+        <a class="card rv r2" href="amazon-dashboard.html">
+          <span class="img"><img src="img/amazon.jpg" alt="" loading="lazy"></span>
+          <span class="body"><h3>Amazon Sales Dashboard</h3><span class="tags"><i>Retail analytics</i><i>Power BI</i></span><span class="line">A 14.28% cancel rate and a sales spike of 6 to 7 times in April to June.</span><span class="more-l">Read case study <b>→</b></span></span>
+        </a>
+        <a class="card rv" href="tokopedia-loyalty.html">
+          <span class="img"><img src="img/tokopedia.jpg" alt="" loading="lazy"></span>
+          <span class="body"><h3>Tokopedia Loyalty Reward</h3><span class="tags"><i>E-commerce</i><i>PRD</i></span><span class="line">A PRD for a reward after a user’s third purchase, aiming to lift retention from 12% to 20%.</span><span class="more-l">Read case study <b>→</b></span></span>
+        </a>
+        <a class="card rv r1" href="leadership-bootcamp.html">
+          <span class="img"><img src="img/bootcamp.jpg" alt="" loading="lazy"></span>
+          <span class="body"><h3>Leadership Bootcamp: Schedule and Cost</h3><span class="tags"><i>Project management</i><i>Earned value</i></span><span class="line">At week 4 the project was on track to overrun its budget by about 48%.</span><span class="more-l">Read case study <b>→</b></span></span>
+        </a>
+        <div class="card more-card rv r2">
+          <span class="body"><h3>Smaller exercises</h3><span class="line">BRDs, a Scrum plan and a refund-flow wireframe from the bootcamp, as PDFs.</span><button class="btn ghost" id="moreBtn" aria-expanded="false" aria-controls="moreWork">Explore more work</button></span>
+        </div>
+      </div>
+
+      <div class="more-work" id="moreWork" hidden>
         <ul class="list">
-          <li><strong><a href="shopee-live.html">Shopee Live: Auto-Apply Voucher</a></strong></li>
-          <li><strong><a href="aromabrew.html">AromaBrew in Yogyakarta</a></strong></li>
-          <li><strong><a href="amazon-dashboard.html">Amazon sales dashboard</a></strong></li>
-          <li><strong><a href="tokopedia-loyalty.html">Tokopedia Loyalty Reward</a></strong></li>
-          <li><strong><a href="leadership-bootcamp.html">Leadership bootcamp: schedule and cost</a></strong></li>
+          <li><strong>Tokopedia Wishlist BRD</strong><span class="l"><a href="files/tokopedia-wishlist-brd.pdf">PDF →</a></span><span class="d">A BRD for a wishlist feature: scope, requirements, constraints and stakeholders.</span></li>
+          <li><strong>Technical Problem 2</strong><span class="l"><a href="files/technical-problem-2.pdf">PDF →</a></span><span class="d">Three case simulations on product sense, collaboration and prioritisation.</span></li>
+          <li><strong>Scrum plan for a workplace health app</strong><span class="l"><a href="files/scrum-sehatkerja.pdf">PDF →</a></span><span class="d">Group exercise: a product goal, a 14-item backlog and three sprints of 19, 21 and 21 story points.</span></li>
+          <li><strong>Request Refund feature</strong><span class="l"><a href="files/refund-flow-wireframe.pdf">PDF →</a></span><span class="d">Group exercise: user flow, information architecture and two wireframes, with a 3-day eligibility rule.</span></li>
+          <li><strong>Payment Link via Midtrans API</strong><span class="d">Group assignment: compared integration options, planned sandbox to go-live and tested success and expired payments.</span></li>
         </ul>
       </div>
-    </noscript>
-    <div class="print-only"><div class="pl" id="printList"></div></div>
-
-    <div class="more">
-      <h3>More work</h3>
-      <p class="note">Smaller exercises from the bootcamp.</p>
-      <ul class="list">
-        <li><strong>Tokopedia Wishlist BRD</strong><span class="l"><a href="files/tokopedia-wishlist-brd.pdf">PDF</a></span><span class="d">A BRD for a wishlist feature: scope, requirements, constraints and stakeholders.</span></li>
-        <li><strong>Technical Problem 2</strong><span class="l"><a href="files/technical-problem-2.pdf">PDF</a></span><span class="d">Three case simulations on product sense, collaboration and prioritisation.</span></li>
-        <li><strong>Scrum plan for a workplace health app</strong><span class="l"><a href="files/scrum-sehatkerja.pdf">PDF</a></span><span class="d">Group exercise: a product goal, a 14-item backlog and three sprints of 19, 21 and 21 story points.</span></li>
-        <li><strong>Request Refund feature</strong><span class="l"><a href="files/refund-flow-wireframe.pdf">PDF</a></span><span class="d">Group exercise: user flow, information architecture and two wireframes, with a 3-day eligibility rule.</span></li>
-        <li><strong>Payment Link via Midtrans API</strong><span class="d">Group assignment: compared integration options, planned sandbox to go-live and tested success and expired payments.</span></li>
-      </ul>
     </div>
   </section>
 
-  <section id="experience" class="fx">
-    <div class="fly bf rtl" style="--y:16%;--s:3.5rem;--t:38s;--d:-20s" aria-hidden="true"><svg viewBox="0 0 64 48" aria-hidden="true"><g class="wings"><g fill="#eba24b" stroke="#1d1c1a" stroke-width="1.6" stroke-linejoin="round"><path d="M32 22C22 4 6 5 4 16c-1 8 12 12 28 10z"/><path d="M32 26C20 28 9 34 14 42c4 6 14-2 18-12z"/><g transform="translate(64 0) scale(-1 1)"><path d="M32 22C22 4 6 5 4 16c-1 8 12 12 28 10z"/><path d="M32 26C20 28 9 34 14 42c4 6 14-2 18-12z"/></g></g></g><path d="M32 16v24" stroke="#1d1c1a" stroke-width="3.2" stroke-linecap="round"/><path d="M32 16c-2-5-5-7-8-8M32 16c2-5 5-7 8-8" fill="none" stroke="#1d1c1a" stroke-width="1.4" stroke-linecap="round"/></svg></div>
-
+  <!-- Testimonials: LinkedIn link only -->
+  <section class="sec tight" id="testimonials">
     <div class="wrap">
-      <h2>Experience and education</h2>
-      <ul class="tl">
-        <li><span class="when">Jun 2026 – now</span><div><strong>Business Analyst and Product Strategy Bootcamp, Dibimbing (Batch 20)</strong><p>Case work from strategy and research to requirements, experiments, dashboards and project cost.</p></div></li>
-        <li><span class="when">Aug 2024 – now</span><div><strong>Arabic Literature (S1), Universitas Gadjah Mada</strong><p>Faculty of Cultural Sciences.</p></div></li>
-        <li><span class="when">Jan 2025 – Jan 2026</span><div><strong>Strategic Research Staff, LEM FIB UGM</strong><p>Researched 5+ strategic issues and wrote 5+ research reports used in internal discussions.</p></div></li>
-        <li><span class="when">Dec 2023 – Dec 2024</span><div><strong>Documentation and Publication Division Coordinator, Forum Anak Kudus</strong><p>Coordinated a team of 5 and documented activities for reporting to 5 stakeholders.</p></div></li>
-        <li><span class="when">2021 – 2024</span><div><strong>Computer and Network Engineering, SMK Negeri 2 Kudus</strong></div></li>
-      </ul>
-      <p class="tools"><span class="mut">Tools:</span> Power BI (DAX, Power Query), Excel, SQL basics, Python (pandas), Figma and FigJam, draw.io, Lovable.</p>
+      <div class="quote rv">
+        <svg class="qm" viewBox="0 0 64 48" aria-hidden="true"><path d="M0 48V28C0 12 9 2 26 0v10C17 12 14 18 14 24h12v24H0zm38 0V28C38 12 47 2 64 0v10c-9 2-12 8-12 14h12v24H38z"/></svg>
+        <p>Recommendations and references are kept on my LinkedIn profile.</p>
+        <a class="btn light" id="tmLink" href="#contact" hidden>See my LinkedIn</a>
+      </div>
     </div>
   </section>
 
-  <section id="certificates" class="fx">
-    <div class="fly cl" style="--y:22%;--s:2.75rem;--t:42s;--d:-8s" aria-hidden="true"><svg viewBox="0 0 56 64" aria-hidden="true"><rect x="2" y="2" width="52" height="60" rx="8" fill="#fffdf9" stroke="#1d1c1a" stroke-width="1.6"/><g fill="none" stroke="#1d1c1a" stroke-width="1.4"><rect x="10" y="12" width="9" height="9" rx="2"/><rect x="10" y="28" width="9" height="9" rx="2"/><rect x="10" y="44" width="9" height="9" rx="2"/></g><g fill="none" stroke="#d97757" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m11.5 16.5 2.5 2.5 4-5"/><path d="m11.5 32.5 2.5 2.5 4-5"/></g><g stroke="#1d1c1a" stroke-opacity=".5" stroke-width="2" stroke-linecap="round"><path d="M25 16.5h22M25 32.5h22M25 48.5h16"/></g></svg></div>
-
+  <!-- Others -->
+  <section class="sec tight" id="others">
     <div class="wrap">
-      <h2>Certificates</h2>
-      <ul class="tl">
-        <li><span class="when">English</span><div><strong>EF SET English Certificate, C1 Advanced</strong><p id="certLink"></p></div></li>
-      </ul>
+      <p class="eyebrow rv">Others</p>
+      <h2 class="rv">CV and certificate</h2>
+      <div class="ogrid" id="othersGrid"></div>
     </div>
   </section>
 
-  <section id="contact" class="fx" hidden>
-    <div class="fly pl rtl" style="--y:30%;--s:3.5rem;--t:36s;--d:-14s" aria-hidden="true"><svg viewBox="0 0 64 40" aria-hidden="true"><path d="M2 20 62 2 40 38 30 25z" fill="#fff" stroke="#1d1c1a" stroke-width="1.6" stroke-linejoin="round"/><path d="M30 25 62 2M30 25v11l7-9" fill="none" stroke="#d97757" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
-
+  <!-- Closing call -->
+  <section class="closing" id="contact">
     <div class="wrap">
-      <h2>Get in touch</h2>
-      <p class="mut">Open to remote and project-based work in business analysis and product.</p>
-      <div class="links" id="contactLinks"></div>
+      <h2 class="rv">Have a project in mind? Let’s talk.</h2>
+      <div class="close-cta rv r1" id="closeLinks"></div>
     </div>
   </section>
 
 </main>
 
-<footer class="foot"><div class="wrap">Restu Hasan Permadi</div></footer>
+<footer class="foot">
+  <div class="wrap">
+    <a class="logo" href="#top">Restu<br>Permadi.</a>
+    <div class="foot-links">
+      <a href="#about">About</a><a href="#works">My Works</a><a href="#testimonials">Testimonials</a><a href="#others">Others</a>
+    </div>
+  </div>
+</footer>
 
 <script>
-/* ---------- 1. Your links. Fill these in; anything left empty is simply not shown. ---------- */
+/* ---------- Your links. Fill these in; anything left empty is simply not shown. ---------- */
 const profile = {
-  email: 'restuhasanpermadi@gmail.com',        // for example 'name@gmail.com'
-  linkedin: 'https://www.linkedin.com/in/restuhasanpermadi',     // full address, for example 'https://www.linkedin.com/in/your-name'
+  email: 'restuhasanpermadi@gmail.com',
+  linkedin: 'https://www.linkedin.com/in/restuhasanpermadi',
   github: '',       // optional
-  cv: 'cv.pdf',     // put your CV in the same folder with this name; the button appears once the file is online
-  certificate: 'https://cert.efset.org/en/BFrdAb'   // optional link to your EF SET certificate
+  cv: 'cv.pdf',     // the file sits next to index.html; the buttons appear once it is online
+  certificate: 'https://cert.efset.org/en/BFrdAb'
 };
 
-/* ---------- 2. Your projects. Cover images live in the img folder. ---------- */
-const slides = [
-  { title:'Shopee Live: Auto-Apply Voucher', href:'shopee-live.html', cover:'img/shopee.jpg',
-    line:'Auto-applying the host’s voucher took 42 seconds against 1 minute 6 seconds by hand, in a two-person usability test.',
-    meta:[['Domain','E-commerce, live commerce'],['Skills','Research, experiment design, requirements'],['Method','Usability test, RICE'],['Artifact','BRD and FSD, experiment plan, PRD, prototype']] },
-  { title:'AromaBrew in Yogyakarta', href:'aromabrew.html', cover:'img/aromabrew.jpg',
-    line:'A grab-and-go kiosk pays back in about 2.9 months. The café format takes 10.',
-    meta:[['Domain','Food and beverage'],['Skills','Financial comparison, risk analysis'],['Method','Payback analysis'],['Artifact','Recommendation deck']] },
-  { title:'Amazon Sales Dashboard', href:'amazon-dashboard.html', cover:'img/amazon.jpg',
-    line:'A 14.28% cancel rate, a sales spike of 6 to 7 times in April to June, and one category earning nearly twice the sales value of its twin.',
-    meta:[['Domain','Retail sales analytics'],['Skills','Data cleaning, DAX, insight writing'],['Method','Power BI dashboard'],['Artifact','Dashboard and insight deck']] },
-  { title:'Tokopedia Loyalty Reward', href:'tokopedia-loyalty.html', cover:'img/tokopedia.jpg',
-    line:'A PRD for a reward that unlocks after a user’s third purchase, aimed at lifting third-to-fourth purchase retention from 12% to 20%.',
-    meta:[['Domain','E-commerce, retention'],['Skills','Problem framing, prioritisation'],['Method','PRD with success metrics'],['Artifact','Prototype-ready PRD']] },
-  { title:'Leadership Bootcamp: Schedule and Cost', href:'leadership-bootcamp.html', cover:'img/bootcamp.jpg',
-    line:'At week 4 the project was on track to overrun its budget by about 48%. The plan was to audit the spend first.',
-    meta:[['Domain','Corporate training, project management'],['Skills','WBS, critical path, earned value'],['Method','EVM, cost classification'],['Artifact','Group deck']] }
-];
+/* ---------- Skills, as listed on the CV ---------- */
+const skills = {
+  ba: ['Root cause analysis', 'Requirements gathering and analysis', 'BRD and FSD', 'Process mapping', 'Stakeholder analysis', 'Stakeholder management', 'Business process analysis'],
+  ps: ['PRD', 'Product strategy', 'Customer segmentation', 'Market sizing (TAM, SAM, SOM)', 'OKR', 'Solution prioritisation'],
+  an: ['Excel and Google Sheets', 'Google Workspace', 'Data analysis', 'Quantitative and qualitative research', 'Structured documentation and reporting', 'Power BI', 'SQL basics', 'Python (pandas)', 'Figma and FigJam', 'draw.io', 'Basic HTML and CSS']
+};
 
-/* ---------- Links ---------- */
 (function(){
-  const heroEl = document.getElementById('heroLinks'), contactEl = document.getElementById('contactLinks'),
-        contactSec = document.getElementById('contact'), navContact = document.getElementById('navContact'),
-        certEl = document.getElementById('certLink');
+  const $ = id => document.getElementById(id);
   let cvOnline = false;
-
-  function add(el, label, href, primary){
-    const a = document.createElement('a');
-    a.href = href; a.textContent = label;
-    if (primary) a.className = 'btn';
-    if (/^https?:/.test(href)) { a.target = '_blank'; a.rel = 'noopener'; }
-    el.appendChild(a);
-  }
-  function build(el){
-    el.innerHTML = '';
-    let first = true;
-    const items = [];
-    if (profile.email)    items.push(['Email me', 'mailto:' + profile.email]);
-    if (profile.linkedin) items.push(['LinkedIn', profile.linkedin]);
-    if (profile.github)   items.push(['GitHub', profile.github]);
-    if (cvOnline)         items.push(['Download CV', profile.cv]);
-    items.forEach(it => { add(el, it[0], it[1], first); first = false; });
-    return items.length;
+  const ext = h => /^https?:/.test(h);
+  function a(cls, text, href){
+    const el = document.createElement('a'); el.className = cls; el.href = href; el.textContent = text;
+    if (ext(href)) { el.target = '_blank'; el.rel = 'noopener'; }
+    return el;
   }
   function render(){
-    build(heroEl);
-    const n = build(contactEl);
-    contactSec.hidden = !n; navContact.hidden = !n;
-    if (profile.certificate) { certEl.innerHTML = ''; add(certEl, 'View certificate', profile.certificate, false); }
-    const pr = document.getElementById('printContact');
-    if (pr) pr.textContent = [profile.email, profile.linkedin, profile.github].filter(Boolean).join('  /  ');
+    const mail = profile.email ? 'mailto:' + profile.email : '';
+    if (mail) {
+      const nm = $('navMail'); nm.href = mail; nm.hidden = false;
+      const hm = $('heroMail'); hm.href = mail;
+    }
+    const t = $('tmLink');
+    if (profile.linkedin) { t.href = profile.linkedin; t.target = '_blank'; t.rel = 'noopener'; t.hidden = false; }
+
+    const c = $('closeLinks'); c.innerHTML = '';
+    if (mail) c.appendChild(a('btn light', 'Email me', mail));
+    if (profile.linkedin) c.appendChild(a('btn outline', 'LinkedIn', profile.linkedin));
+    if (profile.github) c.appendChild(a('btn outline', 'GitHub', profile.github));
+    if (cvOnline) c.appendChild(a('btn outline', 'Download CV', profile.cv));
+
+    const o = $('othersGrid'); o.innerHTML = '';
+    function card(label, title, sub, href){
+      const el = a('oc rv in', '', href);
+      const l = document.createElement('span'); l.className = 'ol'; l.textContent = label;
+      const h = document.createElement('strong'); h.textContent = title;
+      const p = document.createElement('span'); p.className = 'os'; p.textContent = sub;
+      const r = document.createElement('b'); r.className = 'oa'; r.textContent = '→';
+      el.append(l, h, p, r); o.appendChild(el);
+    }
+    if (cvOnline) card('Curriculum vitae', 'Download my CV', 'PDF', profile.cv);
+    if (profile.certificate) card('Certificate', 'EF SET English, C1 Advanced', 'Verify on cert.efset.org', profile.certificate);
+    o.parentNode.parentNode.hidden = !o.children.length;
   }
   render();
-  if (profile.cv && /^https?:|^[\w\-./]+$/.test(profile.cv) && location.protocol.startsWith('http')) {
-    fetch(profile.cv, { method:'HEAD' }).then(r => {
+  if (profile.cv && location.protocol.startsWith('http')) {
+    fetch(profile.cv, { method: 'HEAD' }).then(r => {
       if (r.ok && /pdf/i.test(r.headers.get('content-type') || '')) { cvOnline = true; render(); }
-    }).catch(()=>{});
+    }).catch(() => {});
   }
 })();
 
-/* ---------- Carousel: the centre card faces you, neighbours swing their outer edges forward ---------- */
+/* ---------- Skill tabs ---------- */
 (function(){
-  const stage = document.getElementById('cfStage'), cap = document.getElementById('cfCap'),
-        prev = document.getElementById('cfPrev'), next = document.getElementById('cfNext'),
-        root = document.getElementById('cf');
-  let active = 0, pos = 0, moved = false;
-
-  const cards = slides.map((s, i) => {
-    const b = document.createElement('button');
-    b.type = 'button';
-    b.className = 'cf-card';
-    b.style.backgroundImage = 'url("' + s.cover + '")';
-    b.innerHTML = '<span></span>';
-    b.firstChild.textContent = s.title;
-    b.setAttribute('aria-label', s.title);
-    b.addEventListener('click', () => { if (moved) return; if (i === active) { window.location.href = s.href; } else { go(i); } });
-    stage.appendChild(b);
-    return b;
-  });
-
-  const step = () => cards[0].offsetWidth * 0.66;
-
-  function layout(){
-    const st = step();
-    cards.forEach((c, i) => {
-      const d = i - pos, a = Math.abs(d), sgn = Math.sign(d);
-      const rot = -sgn * Math.min(a, 1) * 50;
-      const sc = 1 - Math.min(a, 2) * 0.08;
-      c.style.transform = 'translateX(' + (d * st) + 'px) rotateY(' + rot + 'deg) scale(' + sc + ')';
-      c.style.zIndex = 100 - Math.round(a * 10);
-      c.style.opacity = a > 3 ? 0 : 1;
-      c.style.pointerEvents = a > 3 ? 'none' : 'auto';
-      c.tabIndex = i === active ? 0 : -1;
-      c.classList.toggle('is-active', i === active);
-      c.setAttribute('aria-label', slides[i].title + (i === active ? ' (open case study)' : ''));
+  const chips = document.getElementById('chips');
+  const tabs = document.querySelectorAll('.tabs button');
+  function show(key){
+    tabs.forEach(b => b.setAttribute('aria-selected', b.dataset.tab === key));
+    chips.classList.remove('swap');
+    chips.innerHTML = '';
+    skills[key].forEach((s, i) => {
+      const el = document.createElement('span'); el.textContent = s; el.style.setProperty('--i', i); chips.appendChild(el);
     });
+    void chips.offsetWidth; chips.classList.add('swap');
   }
-
-  function caption(){
-    const s = slides[active];
-    cap.innerHTML = '';
-    const h = document.createElement('h3'); h.textContent = s.title;
-    const p = document.createElement('p'); p.textContent = s.line;
-    const dl = document.createElement('dl'); dl.className = 'facts';
-    s.meta.forEach(m => {
-      const dt = document.createElement('dt'), dd = document.createElement('dd');
-      dt.textContent = m[0]; dd.textContent = m[1]; dl.append(dt, dd);
-    });
-    const a = document.createElement('a'); a.href = s.href; a.textContent = 'Read the case study';
-    cap.append(h, p, dl, a);
-    prev.disabled = active === 0;
-    next.disabled = active === slides.length - 1;
-  }
-
-  function go(i){
-    active = Math.max(0, Math.min(slides.length - 1, i));
-    pos = active; layout(); caption();
-  }
-
-  let startX = 0, startPos = 0, dragging = false;
-  stage.addEventListener('pointerdown', e => { dragging = true; moved = false; startX = e.clientX; startPos = pos; });
-  window.addEventListener('pointermove', e => {
-    if (!dragging) return;
-    const dx = e.clientX - startX;
-    if (Math.abs(dx) > 5) { moved = true; stage.classList.add('drag'); }
-    if (!moved) return;
-    pos = Math.max(0, Math.min(slides.length - 1, startPos - dx / step()));
-    layout();
-  });
-  window.addEventListener('pointerup', () => {
-    if (!dragging) return;
-    dragging = false; stage.classList.remove('drag');
-    if (moved) { go(Math.round(pos)); setTimeout(() => { moved = false; }, 0); }
-  });
-
-  prev.addEventListener('click', () => go(active - 1));
-  next.addEventListener('click', () => go(active + 1));
-  root.addEventListener('keydown', e => {
-    if (e.key === 'ArrowLeft') go(active - 1);
-    if (e.key === 'ArrowRight') go(active + 1);
-  });
-  window.addEventListener('resize', layout);
-
-  // Print version: every project as plain text with its cover
-  const pl = document.getElementById('printList');
-  slides.forEach(s => {
-    const art = document.createElement('article');
-    const im = document.createElement('img'); im.src = s.cover; im.alt = ''; art.appendChild(im);
-    const h = document.createElement('h3'); h.textContent = s.title;
-    const p = document.createElement('p'); p.textContent = s.line;
-    const f = document.createElement('p'); f.className = 'note';
-    f.textContent = s.meta.map(m => m[0] + ': ' + m[1]).join('. ');
-    art.append(h, p, f); pl.appendChild(art);
-  });
-
-  go(0);
+  tabs.forEach(b => b.addEventListener('click', () => show(b.dataset.tab)));
+  show('ba');
 })();
 
-/* Count-up on the two numbers (skipped when the visitor prefers less motion) */
+/* ---------- Experience accordion ---------- */
 (function(){
-  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  document.querySelectorAll('[data-to]').forEach(function(el){
-    const to = +el.dataset.to; let n = 0;
-    const t = setInterval(function(){ n++; el.textContent = n; if (n >= to) clearInterval(t); }, 900 / to);
+  document.querySelectorAll('.acc-head').forEach(btn => {
+    const body = btn.nextElementSibling;
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !open);
+      body.style.maxHeight = open ? '0px' : body.scrollHeight + 'px';
+    });
   });
+  const mb = document.getElementById('moreBtn'), mw = document.getElementById('moreWork');
+  mb.addEventListener('click', () => {
+    const open = mb.getAttribute('aria-expanded') === 'true';
+    mb.setAttribute('aria-expanded', !open);
+    mb.textContent = open ? 'Explore more work' : 'Hide';
+    mw.hidden = open;
+    if (!open) mw.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+})();
+
+/* ---------- Motion: reveals, counters, marquee, parallax, top bar ---------- */
+(function(){
+  const calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const bar = document.getElementById('siteBar');
+  const hero = document.getElementById('top');
+
+  // marquee: duplicate the track content so the loop has no gap
+  document.querySelectorAll('[data-clone]').forEach(t => { t.innerHTML += t.innerHTML; t.setAttribute('aria-hidden', 'false'); });
+
+  // reveal on scroll
+  const items = document.querySelectorAll('.rv');
+  if ('IntersectionObserver' in window && !calm) {
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }), { threshold: 0.12, rootMargin: '0px 0px -5% 0px' });
+    items.forEach(el => io.observe(el));
+  } else items.forEach(el => el.classList.add('in'));
+
+  // counters, once when visible
+  function count(el){
+    const to = +el.dataset.to, suf = el.dataset.suffix || ''; let n = 0;
+    el.textContent = '0' + suf;
+    const step = Math.max(1, Math.round(to / 40));
+    const t = setInterval(() => { n = Math.min(to, n + step); el.textContent = n + suf; if (n >= to) clearInterval(t); }, 28);
+  }
+  const counters = document.querySelectorAll('[data-to]');
+  if (calm || !('IntersectionObserver' in window)) { /* keep the written numbers */ }
+  else {
+    const co = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { count(e.target); co.unobserve(e.target); } }), { threshold: 0.6 });
+    counters.forEach(c => co.observe(c));
+  }
+
+  // top bar: hides when scrolling down, returns when scrolling up; parallax for the hero shapes
+  let last = 0, ticking = false;
+  function onScroll(){
+    if (ticking) return; ticking = true;
+    requestAnimationFrame(() => {
+      const y = window.scrollY;
+      bar.classList.toggle('solid', y > 20);
+      bar.classList.toggle('hide', y > last && y > 240);
+      last = y;
+      if (!calm && y < 1200) hero.style.setProperty('--sy', y);
+      ticking = false;
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
 })();
 </script>
 </body>
